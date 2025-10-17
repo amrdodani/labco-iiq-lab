@@ -5,7 +5,6 @@ This README will help you set up a realistic company environment to master SailP
 - **How-To:** Concrete commands and file usage.
 - **File Description:** What each script or file is for and when to use it.
 
----
 
 ## **1. Seed Data Preparation**
 
@@ -22,10 +21,8 @@ Alice,Smith,asmith,Engineering,DevOps Engineer,alice.smith@labco.com,Robert
 Bob,Jones,bjones,Sales,Sales Manager,bob.jones@labco.com,Alice
 Carol,Tan,ctan,Finance,Accountant,carol.tan@labco.com,Bob
 
-text
-*Expand with as many rows as you like to simulate a full org.*
 
----
+*Expand with as many rows as you like to simulate a full org.*
 
 ### 1.2. Automated AD User Creation Script
 
@@ -120,16 +117,13 @@ Write-Host "Manager unresolved for ${sam}: '$($r.Manager)'"
 
 Write-Host "All done."
 
-text
 
 **How to run:**
 Open PowerShell as Administrator
 cd 'C:\IIQ8.5 Lab_setup'
 .\AD_Create_Users.ps1
 
-text
 
----
 
 ### 1.3. MySQL Seed Data
 
@@ -157,16 +151,15 @@ VALUES ('Alice', 'Smith', 'asmith', 'Engineering', 'DevOps Engineer', 'alice.smi
 ('Bob', 'Jones', 'bjones', 'Sales', 'Sales Manager', 'bob.jones@labco.com'),
 ('Carol', 'Tan', 'ctan', 'Finance', 'Accountant', 'carol.tan@labco.com');
 
-text
+
 
 **How to load:**
 -- Log in to MySQL Workbench or CLI:
 -- (replace db credentials as needed)
 source C:\IIQ8.5 Lab_setup\sql_seed_employees.sql;
 
-text
 
----
+
 
 ## **2. Version Control with GitHub**
 
@@ -177,33 +170,31 @@ text
 **How to use:**
 
 1. **Navigate to your setup folder:**
-    ```
+    
     cd "C:\IIQ8.5 Lab_setup"
-    ```
+ 
 2. **Initialize Git:**
-    ```
+   
     git init
-    ```
+ 
 3. **Add files:**
-    ```
+  
     git add AD_Seed_Users.csv AD_Create_Users.ps1 sql_seed_employees.sql
-    ```
+ 
 4. **Commit changes:**
-    ```
+   
     git commit -m "Initial seed and automation scripts"
-    ```
+   
 5. **Create a new repo on GitHub website** (name: `labco-iiq-lab`)
 6. **Add the remote:**
-    ```
+  
     git remote add origin https://github.com/[yourusername]/labco-iiq-lab.git
-    ```
+ 
 7. **Push files:**
-    ```
+   
     git branch -M main
     git push -u origin main
-    ```
-
----
+    
 
 ## **File Summary Table**
 
@@ -222,7 +213,7 @@ Now that your environment is seeded and scripts are tracked in GitHub:
 - **Proceed to configuring SailPoint IIQ’s AD and JDBC connectors** (next lesson).
 - Update this README after each future lesson to document your learning and setup.
 
----
+
 
 **Tip:**  
 Whenever you change a file, save, then run:
