@@ -1,0 +1,4 @@
+FirstName,LastName,Username,Department,Title,Email,Manager
+Alice,Smith,asmith,Engineering,DevOps Engineer,alice.smith@labco.com,Robert
+Bob,Jones,bjones,Sales,Sales Manager,bob.jones@labco.com,Alice
+Carol,Tan,ctan,Finance,Accountant,carol.tan@labco.com,Bob
